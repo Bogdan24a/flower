@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 🌷 🌸 🌺 💐 🌹 🌼 🌻 🥀 Тримай квітку 🙃</title>
+    <style>
+        /* body{
+            padding-left: 20%;
+        } */
+
+        .flower {
+            position: fixed;
+            top: 30%;
+            left: 40%;
+            margin-top: -50px;
+            margin-left: -100px;
+        }
+
+        .flower__center {
+            position: relative;
+            width: 10px;
+            height: 10px;
+            background: #FDEE00;
+            border-radius: 50%;
+            left: 140px;
+            top: 120px;
+            animation: move-flover-center 5s 5s both;
+            opacity: 0;
+        }
+
+        .flower__petal {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            margin: 50px 150px;
+            background: #FF420E;
+            border-radius: 100% 0;
+            box-shadow: -70px 70px #FFB347;
+            animation: move-flover 5s 5s both;
+            opacity: 0;
+        }
+
+        .flower__petal:before,
+        .flower__petal:after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 60px;
+        }
+
+        .flower__petal:before {
+            position: absolute;
+            left: -145px;
+            top: -25px;
+            margin: 25px 75px;
+            background: #B39EB5;
+            border-radius: 0 100%;
+            box-shadow: 72px 72px #89DA59;
+            transform: rotate(-30deg);
+            transform-origin: 65px 65px;
+        }
+
+        .flower__petal:after {
+            position: absolute;
+            left: -145px;
+            top: -25px;
+            margin: 24px 75px;
+            background: #80BD9E;
+            border-radius: 0 100%;
+            box-shadow: 72px 72px #F98866;
+            transform: rotate(30deg);
+            transform-origin: 65px 65px;
+        }
+
+        .stalk {
+            position: relative;
+            width: 7px;
+            height: 200px;
+            background: #30B21A;
+            border-radius: 5px;
+            transform: rotate(10deg);
+            margin: 50px 95px;
+            animation: move-stalk 5s;
+            transform-origin: 0% 100%;
+        }
+
+        .leaf {
+            position: absolute;
+            width: 50px;
+            height: 90px;
+            border-radius: 75% 0 75% 0;
+            background: linear-gradient(to left, #86DD8B, #30B21A);
+            margin: -200px 115px;
+            transform: rotate(30deg);
+            animation: move-leaf 5s 2s both;
+            transform-origin: 0% 100%;
+            opacity: 0;
+        }
+
+        @keyframes move-stalk {
+            0% {
+                transform: rotate(10deg) scale(0);
+            }
+
+            100% {
+                transform: rotate(10deg)scale(1);
+            }
+        }
+
+        @keyframes move-leaf {
+            0% {
+                transform: rotate(30deg) scale(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: rotate(30deg) scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes move-flover {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes move-flover-center {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flower">
+        <div class="flower__blossom"></div>
+        <div class="flower__center"></div>
+        <div class="flower__petal"></div>
+        <div class="stalk"></div>
+        <div class="leaf"></div>
+    </div>
+</body>
+
+</html>
